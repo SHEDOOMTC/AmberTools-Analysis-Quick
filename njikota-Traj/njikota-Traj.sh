@@ -6,12 +6,33 @@
 echo "=== cpptraj trajectory processing setup ==="
 
 read -p "Enter parameter/topology file (e.g., com_solvated.top): " parmfile
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter trajectory prefix (e.g., md, prod, run, traj_): " prefix
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter starting index (e.g., 0 or 1): " startnum
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter trajectory format (mdcrd or nc): " trajfmt
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter number of trajectory files: " ntraj
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter number of frames to process per file (0 for all): " nframes
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter ions to strip (comma-separated, e.g., Na+,Cl-; empty for none): " ions
+echo '#'
+echo '#'
+echo '#'
 read -p "Enter water residue name (default WAT): " water
 water=${water:-WAT}
 
