@@ -11,6 +11,19 @@ A script to help you seamlessly combine your amber trajectory files
 
 **RMS-fluc-deviations:**
 
-*Quickly analyze rmsd, rmsf, rog, globally and in the active site*
+*Quickly analyze rmsd, rmsf, rog, globally and in the active site or specific regions*
+
+---------
+
+**Higher-fluctuations**
+
+
+----------
+
+
+**otu-dimension-cord-analys**
+
+
+-----------
 
 
