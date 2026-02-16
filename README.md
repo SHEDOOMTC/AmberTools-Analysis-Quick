@@ -83,3 +83,15 @@ Usage:
 
 ------------
 
+**Ike-eji-aru-oru computation**
+
+*Compute the fre energy surface of your system*
+
+Usage:
+
+```bash
+./hhhhhhhhhh
+
+```
+
+-----------
