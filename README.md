@@ -22,7 +22,9 @@ chmod +x njikota-Traj.sh
 
 ```
 The script will request several input paramters interactively like your parm file, traj prefix, starting traj index, traj format, number of traj files, number of frames to process per traj, ions to strip, water residue name.
+
 It assumes your traj files are named sequentially strting from 0 or 1 with a prefix and then an extension
+
 You will have a stripped topology and stripped combined traj in .nc format in the output
 
 --------
