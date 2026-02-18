@@ -9,7 +9,7 @@ This is an attempt to deposit the things I have learnt on how to do post-MD anal
 
 A script to help you seamlessly combine your amber trajectory files
 
-Usage:
+**Usage:**
 
 ```bash
 #Clone repository
