@@ -65,7 +65,7 @@ Usage:
 ```
 -----------
 
-**Weda-dimension**
+**nweda-dimension**
 
 *Reduce dimension and extract the most important motions*
 
