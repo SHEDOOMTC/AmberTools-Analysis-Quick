@@ -13,7 +13,7 @@ A script to help you seamlessly combine your amber trajectory files
 
 ```bash
 #Clone repository
-https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
 #copy njikota-Traj.sh from njikota-Traj/ into your working directory
 # Make executable
 chmod +x njikota-Traj.sh
