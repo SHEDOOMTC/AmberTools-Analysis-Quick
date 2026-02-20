@@ -33,7 +33,7 @@ esac
 echo "Enter number of clusters:"
 read NCLUST
 
-echo "Enter residue range (e.g., 1-389):"
+echo "Enter residue range (e.g., 1-100):"
 read RESRANGE
 
 echo "Enter atom masks (comma-separated, e.g., C,N,O,CA,CB):"
