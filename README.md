@@ -87,28 +87,69 @@ chmod +x otu-dimension-cord-analys.sh
 
 -----------
 
-**nweda-dimension**
+**nweda-dimension-pca**
 
-*Reduce dimension and extract the most important motions*
+*Reduce dimension and extract the most important motions along n principal components (PCA)*
 
 Usage:
 
 ```bash
-./hhhhhhhhhh
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy nweda-dimension-pca.sh from nweda-dimension-pca/ into your working directory
+# Make executable
+chmod +x nweda-dimension-pca.sh
+#run
+./nweda-dimension-pca.sh
 
 ```
+
+1.  The script will request several input paramters interactively like your parm file, traj file, start frame and end frame and name of the output file
+
+2.  It also request to choose the stride for performing the cutting step (for computational efficiency; choose between 100-500)
+
+4.  It will also request for the number of principal vectors to compute
+
+5.  It outputs two key .dat files for the principal components and their contributions 
+
+*Note*
+
+The diagonalization of the matrix uses only the @CA atoms; if needed, you may have to edit the script
+
 ------------
 
-**Okachasi-mkpa-structure**
+**strucuture-kachasi-mkpa**
 
-*Collect the most representative structure in your system*
+*Collect the most representative structure in your system through clustering*
 
 Usage:
 
 ```bash
-./hhhhhhhhhh
+
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy strucuture-kachasi-mkpa.sh from strucuture-kachasi-mkpa/ into your working directory
+# Make executable
+chmod +x strucuture-kachasi-mkpa.sh
+#run
+./strucuture-kachasi-mkpa.sh
 
 ```
+
+
+1.  The script will request several input paramters interactively like your parm file, traj file, start frame and end frame, and stride 
+
+2.  It also request to choose the clustering method (hieragglo, kmeans, dbscan, average-linkage) and the number of cluster expected
+
+3.  You also enter the residue range (eg. 1-400) and the atom masks (eg. e.g., C,N,O,CA,CB)
+
+4.  Output files are hard coded to generate cluster number vs time, cluster population vs time, representative ad average strucutre of each cluster, and a summary file of clusters (number of frames, rmsd etc.)
+
+ *Note:* 
+ 
+ This uses sieve of 10 internally and the script must be edited if there is need to change it.
+
+
 ------------
 
 **Ike-eji-aru-oru computation**
@@ -118,7 +159,7 @@ Usage:
 Usage:
 
 ```bash
-./hhhhhhhhhh
+
 
 ```
 -----------
