@@ -50,7 +50,7 @@ chmod +x rms-fluc-deviations.sh
 
 1.  The script will first request input paramters interactively like your stripped parm and trajectory files, starting frame, ending frame.
 
-2.  Then you will choose one of "RMSD" "RMSF" or "ROG" analysis and also enter residue range and atom masks
+2.  Then you will choose one of "RMSD" "RMSF" or "ROG" analysis and also enter residue range (for active site or domain analysis) and atom masks
   
 3.  For any of "RMSD" or ROG" you choose, you will have to further select your reference structure (First frame, average structure or the minimized structure)
 
