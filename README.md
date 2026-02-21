@@ -31,16 +31,37 @@ chmod +x njikota-Traj.sh
 
 --------
 
-**RMS-fluc-deviations:**
+**rms-fluc-deviations:**
 
 *Quickly analyze rmsd, rmsf, rog, globally and in the active site or specific regions*
 
 Usage:
 
 ```bash
-./hhhhhhhhhh
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy rms-fluc-deviations.sh from rms-fluc-deviations/ into your working directory
+# Make executable
+chmod +x rms-fluc-deviations.sh
+#run
+./rms-fluc-deviations.sh
 
 ```
+
+1.  The script will first request input paramters interactively like your stripped parm and trajectory files, starting frame, ending frame.
+
+2.  Then you will choose one of "RMSD" "RMSF" or "ROG" analysis and also enter residue range and atom masks
+  
+3.  For any of "RMSD" or ROG" you choose, you will have to further select your reference structure (First frame, average structure or the minimized structure)
+
+4.  If you choose the minimized strucutre, you will be requested to enter a solvated topology and restart file of the minimization step (since the restart file is still solvated). This step is necessary to generate a stripped minimized structure to be used as reference
+
+5.  The names of the output files are hardcoded but usually reads "rmsd_minimized.dat" for rmsd using the minimized structure as reference
+
+6.  Any other detailed output needed will require the modification of the script
+
+
+
 ---------
 
 **Higher-fluctuations**
