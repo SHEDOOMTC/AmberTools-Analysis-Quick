@@ -19,7 +19,7 @@ echo "3) Radius of Gyration (ROG)"
 read -p "Enter choice (1/2/3): " analysis
 
 read -p "Enter range of residue(eg. 1-10): " resid
-read -p "Enter range of atom (eg. CA,CB etc.): " mask
+read -p "Enter atom mask (eg. CA,CB etc.): " mask
 
 
 CPPTRAJ_INPUT="cpptraj_input.in"
