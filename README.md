@@ -177,7 +177,7 @@ chmod +x strucuture-kachasi-mkpa.sh
 
 **Ike-eji-aru-oru computation**
 
-*Compute the fre energy surface of your system*
+*Compute the fre energy surface of your system using the MMGBSA and MMPBSA protocols*
 
 Usage:
 
