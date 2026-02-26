@@ -3,6 +3,8 @@ This is an attempt to deposit the things I have learnt on how to do post-MD anal
 
 The scripts here are interactive and automated to allow the user more control over the inputs and outputs
 
+For more information, see the [AmberTools25 Manual](https://ambermd.org/doc12/Amber25.pdf)
+
 ---------
 
 **njikota-Traj:**
@@ -187,13 +189,49 @@ Usage:
 
 **Kontakti-na-hydrogen-bondi-analysis**
 
-*Analyze the most important contacts and hydrogen bonding in your systems*
+*Analyze the most important contacts and hydrogen bonding in your systems between your active site residues and your ligand*
 
-Usage:
+Usage for kontakti analysis:
 
 ```bash
-./hhhhhhhhhh
-
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy Kontakti-na-hydrogen-bondi-analysis/kontakti-analysis.sh from Kontakti-na-hydrogen-bondi-analysis/ into your working directory
+# Make executable
+chmod +x kontakti-analysis.sh
+#run
+./kontakti-analysis.sh
 ```
+
+Usage for hydrogen-bondi-analysis:
+
+```bash
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy Kontakti-na-hydrogen-bondi-analysis/hydrogen-bondi-analysis.sh from Kontakti-na-hydrogen-bondi-analysis/ into your working directory
+# Make executable
+chmod +x hydrogen-bondi-analysis.sh
+#run
+./hydrogen-bondi-analysis.sh
+```
+
+1.  Both scripts will request several input paramters interactively like your parm file, traj file, mask for your active site residues and also for the ligand 
+
+2.  It also request to choose the reference frame (either the first frame of the trajectory or the cordinate file of the minimized system)
+
+3.  You will have to choose the cutt-off distance for contact analysis, but the cut-off distance and angle for hbond analysis are hard-coded (3.5A and 135° respectively)
+
+4.  Contact analysis will generate total contact count, count by residues, native contacts and time series contact counts etc. (for more information, see the [AmberTools25 Manual](https://ambermd.org/doc12/Amber25.pdf)) 
+
+5.  The hbond analysis runs in parallel and will generate outputs for when the residue or ligand is the donor (named *_res2lig_* and *_lig2res_* respectively). It will output hydrogen bond counts, occupancies and time series.
+
+6.  You can choose a base name to append to all the output file for ease of recognition.
+
+ *Note:* 
+ 
+ This analysis uses all the available frames. If you need a section of your trajectory, you will need to edit the script 
+
+
+
 -----------
 
