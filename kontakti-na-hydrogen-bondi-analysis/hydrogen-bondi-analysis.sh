@@ -64,7 +64,7 @@ run
 # -------------------------
 # HBonds: Ligand → Residues
 # -------------------------
-hbond donormask $MASK2 acceptormask $MASK1 angle 135E dist 3.5 \\
+hbond donormask :$MASK2 acceptormask :$MASK1 angle 135 dist 3.5 \\
     out ${BASE}_lig2res_hb.dat avgout ${BASE}_lig2res_hb_avg.dat \\
     printatomnum nointramol \\
     series uuseries ${BASE}_lig2res_hb_series.dat
@@ -75,4 +75,4 @@ EOF
 echo "========================"
 echo "========================"
 echo "Running CPPTRAJ script"
-cpptraj -i $OUTFILE"
+cpptraj -i $OUTFILE
