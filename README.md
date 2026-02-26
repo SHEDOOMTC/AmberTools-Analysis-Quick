@@ -5,6 +5,8 @@ The scripts here are interactive and automated to allow the user more control ov
 
 For more information, see the [AmberTools25 Manual](https://ambermd.org/doc12/Amber25.pdf)
 
+Special thanks to [Dr. Oluyemi Wande](https://orcid.org/0000-0003-3646-2488) and [Dr. Adewumi Adeniyi](https://scholar.google.com/citations?user=upkvyLEAAAAJ&hl=en) for their guidance
+
 ---------
 
 **njikota-Traj:**
