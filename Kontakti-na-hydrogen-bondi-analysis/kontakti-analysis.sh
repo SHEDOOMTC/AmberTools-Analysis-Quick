@@ -69,8 +69,6 @@ nativecontacts name NC1 :$MASK1&!@H= :$MASK2&!@H= \\
 
 run
 EOF
-echo "========================"
-echo "========================"
 
 echo "CPPTRAJ script written to: $OUTFILE"
 echo "========================"
