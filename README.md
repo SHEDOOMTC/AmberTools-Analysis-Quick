@@ -199,9 +199,23 @@ chmod +x strucuture-kachasi-mkpa.sh
 Usage:
 
 ```bash
-
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy ike-eji-aru-oru.sh from ike-eji-aru-oru/ into your working directory
+# Make executable
+chmod +x ike-eji-aru-oru.sh
+#run
+./ike-eji-aru-oru.sh
 
 ```
+1.  The script will request several input paramters interactively like your parm file, traj file, start frame and end frame, and stride 
+
+
+ *Note:* 
+ 
+ This uses sieve of 10 internally and the script must be edited if there is need to change it.
+
+
 -----------
 
 **Kontakti-na-hydrogen-bondi-analysis**
