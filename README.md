@@ -220,6 +220,10 @@ chmod +x ike-eji-aru-oru.sh
 
 6.  The output is a DAT file for the energy and decomposition results 
 
+*Note:* 
+
+To use more CPU, you can edit the script to impliment MPIRUN
+
 -----------
 
 **Kontakti-na-hydrogen-bondi-analysis**
