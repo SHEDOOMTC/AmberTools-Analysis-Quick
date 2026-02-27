@@ -1,5 +1,5 @@
 # AmberTools-Analysis-Quick
-This is an attempt to deposit the things I have learnt on how to do post-MD analysis on Amber
+In the last three years, I have used AmberTools to perform several molecular dynamics simulations of protein-ligand complexes. This repository is an attempt to provide easy to use script for the most common analysis I have performed in this period.
 
 The scripts here are interactive and automated to allow the user more control over the inputs and outputs
 
@@ -31,7 +31,7 @@ chmod +x njikota-Traj.sh
 
 2.  It assumes your traj files are named sequentially starting from 0 or 1 with a prefix and then an extension
 
-3.  You will have a stripped topology and stripped combined traj in .nc format in the output
+3.  You will have a stripped topology and stripped combined traj in NetCD format as the output
 
 --------
 
