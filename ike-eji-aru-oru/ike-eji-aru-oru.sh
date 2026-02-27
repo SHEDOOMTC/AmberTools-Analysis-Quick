@@ -91,7 +91,7 @@ cat << EOF >> $OUTFILE
 EOF
 
 echo "Running ANTE_MMPBSA"
-ante-MMPBSA.py -p $TOP -c com4.top -r rec4.top -l LIG4.top -n :$LIGANDMASK --radii=mbondi2
+ante-MMPBSA.py -p $TOP -c com4.top -r rec4.top -l LIG4.top -s :WAT:Na+:Cl- -n :$LIGANDMASK --radii=mbondi2
 
 echo "========================"
 echo "========================"
