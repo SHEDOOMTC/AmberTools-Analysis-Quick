@@ -208,13 +208,17 @@ chmod +x ike-eji-aru-oru.sh
 ./ike-eji-aru-oru.sh
 
 ```
-1.  The script will request several input paramters interactively like your parm file, traj file, start frame and end frame, and stride 
+1.  The script will request several input paramters interactively like your parm file, traj file, start frame and end frame, and stride
 
+2.  Choose the stride to use only about 500-1000 frames for computational efficiency
 
- *Note:* 
- 
- This uses sieve of 10 internally and the script must be edited if there is need to change it.
+3.  Choose the ligand mask and residue list for energy decomposition
 
+4.  You will have to choose if it is GB (MMGBSA) or PB (MMPBSA) that you want to run
+
+5.  The igb for GB is hard-coded to 5 and saltcon to 0.15; for PB, the istrng is hard-coded to 0.100. Any needed changes will require editing the script
+
+6.  The output is a DAT file for the energy and decomposition results 
 
 -----------
 
