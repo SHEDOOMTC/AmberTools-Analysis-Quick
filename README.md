@@ -70,14 +70,29 @@ chmod +x rms-fluc-deviations.sh
 
 **Higher-fluctuations**
 
-*Measure dynamic correlations, secondary structure changes etc*
+*Measure dynamic correlations between residue, and secondary structure changes*
 
 Usage:
 
 ```bash
-./hhhhhhhhhh
+#Clone repository
+git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
+#copy corr-mat-sec-struct.sh from Higher-fluctuations/ into your working directory
+# Make executable
+chmod +x corr-mat-sec-struct.sh
+#run
+./corr-mat-sec-struct.sh
 
 ```
+1.  The script will first request input paramters interactively like your stripped parm and trajectory files, starting frame, ending frame, stride, residue and atom masks.
+
+2.  Then you will choose a basename to append to your output file
+
+3.  It will run correlation matrix and secondary structure changes one after the other
+
+4.  The output of the correlation matrix is in DAT format while secondary structure changes gives in AGR and GNU formats
+  
+
 ----------
 
 **otu-dimension-cord-analys**
@@ -198,7 +213,7 @@ Usage for kontakti analysis:
 ```bash
 #Clone repository
 git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
-#copy Kontakti-na-hydrogen-bondi-analysis/kontakti-analysis.sh from Kontakti-na-hydrogen-bondi-analysis/ into your working directory
+#copy kontakti-analysis.sh from Kontakti-na-hydrogen-bondi-analysis/ into your working directory
 # Make executable
 chmod +x kontakti-analysis.sh
 #run
@@ -210,7 +225,7 @@ Usage for hydrogen-bondi-analysis:
 ```bash
 #Clone repository
 git clone https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick.git
-#copy Kontakti-na-hydrogen-bondi-analysis/hydrogen-bondi-analysis.sh from Kontakti-na-hydrogen-bondi-analysis/ into your working directory
+#copy hydrogen-bondi-analysis.sh from Kontakti-na-hydrogen-bondi-analysis/ into your working directory
 # Make executable
 chmod +x hydrogen-bondi-analysis.sh
 #run
