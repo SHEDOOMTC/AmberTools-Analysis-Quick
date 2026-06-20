@@ -1,5 +1,13 @@
 # AmberTools-Analysis-Quick
 
+--------
+
+<p align="center">
+  <img src="https://github.com/SHEDOOMTC/AmberTools-Analysis-Quick/blob/935440e18a293b65c9aa11a7fd6d334d721d949d/images/Interactive_scripts.png" width="500">
+</p>
+
+--------
+
 In the last three years, I have used AmberTools to perform several molecular dynamics simulations of protein-ligand complexes. This repository is an attempt to provide easy to use script for the most common analysis I have performed in this period.
 
 The scripts here are interactive and automated to allow the user more control over the inputs and outputs
